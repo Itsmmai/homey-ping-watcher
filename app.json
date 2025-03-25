@@ -14,7 +14,8 @@
     {
       "id": "ping",
       "name": { "en": "Ping Watcher" },
-      "class": "sensor"
+      "class": "sensor",
+      "capabilities": []
     }
   ],
   "flow": {
