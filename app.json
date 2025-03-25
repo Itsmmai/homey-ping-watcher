@@ -1,0 +1,29 @@
+{
+  "id": "com.ab.pingwatcher",
+  "name": { "en": "Ping Watcher" },
+  "description": { "en": "Monitor an IP address and trigger flow when offline" },
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "category": ["tools"],
+  "author": {
+    "name": "Ab + ChatGPT"
+  },
+  "permissions": [],
+  "main": "app.js",
+  "drivers": [
+    {
+      "id": "ping",
+      "name": { "en": "Ping Watcher" },
+      "class": "sensor"
+    }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "id": "ip_unreachable",
+        "title": { "en": "IP is unreachable" },
+        "args": []
+      }
+    ]
+  }
+}
